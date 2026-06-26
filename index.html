@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Minimal portfolio for Arjun Mehta, CEO at Hacktroid."
+      content="StudioBlank-inspired portfolio for Arjun Mehta, CEO at Hacktroid."
     />
     <title>Arjun Mehta | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,35 +17,34 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="site-shell">
+    <div class="page-shell">
       <header class="hero" id="home">
-        <nav class="nav">
+        <div class="topbar">
           <a href="#home" class="brand">Arjun Mehta</a>
-          <div class="nav-links">
+          <nav class="nav-links" aria-label="Primary navigation">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#services">Services</a>
             <a href="#socials">Socials</a>
-          </div>
-        </nav>
+          </nav>
+        </div>
 
         <div class="hero-grid">
-          <div>
+          <div class="hero-copy">
             <p class="eyebrow">CEO @ Hacktroid</p>
-            <h1>Building software products and resilient digital security services.</h1>
+            <h1>Building software that feels sharp, dependable, and quietly ambitious.</h1>
             <p class="lead">
-              I work at the intersection of product thinking, software engineering,
-              and security operations. This placeholder portfolio reflects the
-              direction of the work I’m building next.
+              I develop digital products and help clients strengthen security posture through
+              practical engineering, vulnerability assessment, and managed operations.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#projects">View work</a>
-              <a class="btn btn-secondary" href="#socials">Get in touch</a>
+              <a class="btn btn-secondary" href="#socials">Contact</a>
             </div>
           </div>
 
-          <aside class="summary-card" aria-label="Professional summary">
-            <p class="summary-label">Current focus</p>
+          <aside class="hero-panel" aria-label="Current focus">
+            <p class="panel-label">Currently available for</p>
             <ul>
               <li>Custom software applications</li>
               <li>VAPT and security consulting</li>
@@ -56,91 +55,122 @@
       </header>
 
       <main>
-        <section id="about" class="section">
-          <div class="section-head">
+        <section id="about" class="section intro-section">
+          <div class="section-heading">
             <p class="eyebrow">About</p>
-            <h2>A calm, practical builder with a security-first mindset.</h2>
+            <h2>Minimal by instinct. Clear by practice.</h2>
           </div>
-          <p class="section-copy">
-            I lead teams that create useful technology and protect it with strong
-            operational discipline. The work spans product development, service delivery,
-            and client partnerships across software and security.
-          </p>
+          <div class="intro-grid">
+            <p>
+              I lead teams that build useful technology and protect it with disciplined execution.
+              The work spans product development, service delivery, and long-term client partnerships
+              across software and security.
+            </p>
+            <div class="meta-list">
+              <div>
+                <span>Role</span>
+                <strong>CEO @ Hacktroid</strong>
+              </div>
+              <div>
+                <span>Focus</span>
+                <strong>Software + Security</strong>
+              </div>
+              <div>
+                <span>Approach</span>
+                <strong>Practical, calm, direct</strong>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section id="projects" class="section section-alt">
-          <div class="section-head">
+        <section id="projects" class="section">
+          <div class="section-heading">
             <p class="eyebrow">Selected projects</p>
-            <h2>Dummy projects that reflect the kind of work I’m shaping.</h2>
+            <h2>Dummy projects that reflect the direction of the work.</h2>
           </div>
 
-          <div class="card-grid">
-            <article class="card">
-              <div class="card-visual"></div>
-              <h3>SentinelShield</h3>
-              <p>A monitoring dashboard for security visibility and alert response.</p>
-              <span>Security • Web App</span>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-visual visual-one"></div>
+              <div class="project-body">
+                <p class="project-type">Security • Web App</p>
+                <h3>SentinelShield</h3>
+                <p>A monitoring dashboard for visibility, alerting, and operational response.</p>
+              </div>
             </article>
 
-            <article class="card">
-              <div class="card-visual"></div>
-              <h3>SecureOps Portal</h3>
-              <p>An MSSP workspace for tracking incidents, clients, and support workflows.</p>
-              <span>Operations • Platform</span>
+            <article class="project-card">
+              <div class="project-visual visual-two"></div>
+              <div class="project-body">
+                <p class="project-type">Operations • Platform</p>
+                <h3>SecureOps Portal</h3>
+                <p>An MSSP workspace for tracking incidents, clients, and support workflows.</p>
+              </div>
             </article>
 
-            <article class="card">
-              <div class="card-visual"></div>
-              <h3>BuildFlow</h3>
-              <p>A lightweight planning tool built for fast-moving product teams.</p>
-              <span>Productivity • SaaS</span>
+            <article class="project-card">
+              <div class="project-visual visual-three"></div>
+              <div class="project-body">
+                <p class="project-type">Productivity • SaaS</p>
+                <h3>BuildFlow</h3>
+                <p>A lightweight planning tool for fast-moving teams that value clarity over noise.</p>
+              </div>
             </article>
           </div>
         </section>
 
-        <section id="services" class="section">
-          <div class="section-head">
+        <section id="services" class="section service-section">
+          <div class="section-heading">
             <p class="eyebrow">Services</p>
-            <h2>Software development, security assessment, and managed support.</h2>
+            <h2>Work that spans product building and digital defense.</h2>
           </div>
 
-          <div class="card-grid">
-            <article class="card compact-card">
-              <h3>Custom software</h3>
-              <p>Web and product experiences tailored to business goals.</p>
-            </article>
-            <article class="card compact-card">
-              <h3>VAPT</h3>
-              <p>Structured vulnerability assessment and practical remediation guidance.</p>
-            </article>
-            <article class="card compact-card">
-              <h3>MSSP</h3>
-              <p>Ongoing monitoring, support, and security operations coverage.</p>
-            </article>
+          <div class="service-list">
+            <div class="service-item">
+              <span>01</span>
+              <div>
+                <h3>Custom software</h3>
+                <p>Web and product experiences tailored to business goals.</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <span>02</span>
+              <div>
+                <h3>VAPT</h3>
+                <p>Structured vulnerability assessment and practical remediation guidance.</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <span>03</span>
+              <div>
+                <h3>MSSP</h3>
+                <p>Ongoing monitoring, support, and security operations coverage.</p>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section id="socials" class="section section-alt">
-          <div class="section-head">
+        <section id="socials" class="section contact-section">
+          <div class="section-heading">
             <p class="eyebrow">Socials</p>
             <h2>Reach out directly.</h2>
           </div>
 
-          <div class="social-list">
-            <a class="social-item" href="mailto:arjun.mehta@hacktroid.in">
-              <span class="social-label">Email</span>
-              <span class="social-value">arjun.mehta@hacktroid.in</span>
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:arjun.mehta@hacktroid.in">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">arjun.mehta@hacktroid.in</span>
             </a>
-            <a class="social-item" href="https://in.pinterest.com/arjunmehtaht" target="_blank" rel="noreferrer">
-              <span class="social-label">Pinterest</span>
-              <span class="social-value">in.pinterest.com/arjunmehtaht</span>
+            <a class="contact-card" href="https://in.pinterest.com/arjunmehtaht" target="_blank" rel="noreferrer">
+              <span class="contact-label">Pinterest</span>
+              <span class="contact-value">in.pinterest.com/arjunmehtaht</span>
             </a>
           </div>
         </section>
       </main>
 
       <footer class="footer">
-        <p>Arjun Mehta — CEO @ Hacktroid</p>
+        <p>Arjun Mehta • CEO @ Hacktroid</p>
       </footer>
     </div>
   </body>
